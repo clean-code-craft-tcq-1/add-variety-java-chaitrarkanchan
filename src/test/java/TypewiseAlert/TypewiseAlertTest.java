@@ -17,6 +17,8 @@ public class TypewiseAlertTest
     {
         BatteryCharacter batteryCharacter = new BatteryCharacter(CoolingType.PASSIVE_COOLING,"Bosch");
 		TypewiseAlert.checkAndAlert(AlertTarget.TO_Email,batteryCharacter , 36);
+	   	TypewiseAlert.checkAndAlert(AlertTarget.TO_Console,batteryCharacter , 36);
+	   	
     }
 	@Test
     public void classifyTemperatureBreachAsPerCooling()
